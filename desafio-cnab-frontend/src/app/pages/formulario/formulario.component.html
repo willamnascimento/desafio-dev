@@ -1,0 +1,11 @@
+<div  class="wrapper" >
+    <div class="file-input-wrapper">
+        <input type="file" id="fileInput" (change)="onFileSelected($event)" />
+        <label for="fileInput">Clique aqui para Importação CNAB</label>
+        <p *ngIf="selectedFile">{{ selectedFile.name }}</p>
+    </div>
+    <div class="file-button-wrapper">
+        <button class="btn" (click)="uploadFile()" [disabled]="!selectedFile">Enviar arquivo</button>
+    </div>
+</div>
+

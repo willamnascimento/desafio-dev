@@ -1,1 +1,5 @@
-/* You can add global styles to this file, and also import other style files */
+html, body{ margin: 0}
+#slider div.wrapper{
+  height: 100vh !important;
+  width: 100vw;
+}
