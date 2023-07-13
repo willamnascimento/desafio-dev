@@ -46,5 +46,7 @@ yarn-error.log
 Thumbs.db
 
 /desafio-cnab-backend/.DS_Store
+/desafio-cnab-backend/Desafio.API/obj/Debug
+/desafio-cnab-backend/Desafio.API/bin/
 
 
