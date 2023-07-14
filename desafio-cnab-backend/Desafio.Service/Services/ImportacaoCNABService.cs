@@ -23,9 +23,11 @@ public class ImportacaoCNABService : IImportacaoCNABService
         throw new NotImplementedException();
     }
 
-    public Task<IEnumerable<ImportacaoCNABDto>> GetAll()
+    public async Task<IEnumerable<ImportacaoCNABDto>> GetAll()
     {
-        throw new NotImplementedException();
+        var entities = await repository.GetAll();
+
+        return mapper.Map<IEnumerable<ImportacaoCNABDto>>(entities);
     }
 }
 
