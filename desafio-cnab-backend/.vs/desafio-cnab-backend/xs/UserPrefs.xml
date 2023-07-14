@@ -1,4 +1,9 @@
 ﻿<Properties StartupConfiguration="{D25D941B-3729-4731-9B80-8C5E2CB3731E}|Default">
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Desafio.API FirstBuild="True" PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.Desafio.Service FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.Desafio.Infra FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.Desafio.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.Desafio.Test FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.Desafio.Domain FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.Desafio.Application FirstBuild="True" />
 </Properties>
