@@ -16,18 +16,18 @@ public class BaseRepository<T> : IRepository<T> where T : BaseEntity
         dbSet = context.Set<T>();
     }
 
-    public async Task<IEnumerable<T>> GetAll()
+    public IEnumerable<T> GetAll()
     {
-        return await dbSet.ToListAsync();
+        return  dbSet.ToList();
     }
 
-    public async Task<T> Insert(T entity)
+    public T Insert(T entity)
     {
 
         entity.DataImportacao = DateTime.Now;
         dbSet.Add(entity);
 
-        await context.SaveChangesAsync();
+        context.SaveChanges();
 
         return entity;
     }

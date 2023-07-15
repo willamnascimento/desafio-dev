@@ -26,7 +26,17 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/Users/will.i.am/git/desafio-dev/desafio-cnab-backend/Desafio.Application/Desafio.Application.csproj": {
+                "projectPath": "/Users/will.i.am/git/desafio-dev/desafio-cnab-backend/Desafio.Application/Desafio.Application.csproj"
+              },
+              "/Users/will.i.am/git/desafio-dev/desafio-cnab-backend/Desafio.Domain/Desafio.Domain.csproj": {
+                "projectPath": "/Users/will.i.am/git/desafio-dev/desafio-cnab-backend/Desafio.Domain/Desafio.Domain.csproj"
+              },
+              "/Users/will.i.am/git/desafio-dev/desafio-cnab-backend/Desafio.Service/Desafio.Service.csproj": {
+                "projectPath": "/Users/will.i.am/git/desafio-dev/desafio-cnab-backend/Desafio.Service/Desafio.Service.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -59,6 +69,278 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.304/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/will.i.am/git/desafio-dev/desafio-cnab-backend/Desafio.Application/Desafio.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/will.i.am/git/desafio-dev/desafio-cnab-backend/Desafio.Application/Desafio.Application.csproj",
+        "projectName": "Desafio.Application",
+        "projectPath": "/Users/will.i.am/git/desafio-dev/desafio-cnab-backend/Desafio.Application/Desafio.Application.csproj",
+        "packagesPath": "/Users/will.i.am/.nuget/packages/",
+        "outputPath": "/Users/will.i.am/git/desafio-dev/desafio-cnab-backend/Desafio.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/will.i.am/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/will.i.am/git/desafio-dev/desafio-cnab-backend/Desafio.Domain/Desafio.Domain.csproj": {
+                "projectPath": "/Users/will.i.am/git/desafio-dev/desafio-cnab-backend/Desafio.Domain/Desafio.Domain.csproj"
+              },
+              "/Users/will.i.am/git/desafio-dev/desafio-cnab-backend/Desafio.Infra/Desafio.Infra.csproj": {
+                "projectPath": "/Users/will.i.am/git/desafio-dev/desafio-cnab-backend/Desafio.Infra/Desafio.Infra.csproj"
+              },
+              "/Users/will.i.am/git/desafio-dev/desafio-cnab-backend/Desafio.Service/Desafio.Service.csproj": {
+                "projectPath": "/Users/will.i.am/git/desafio-dev/desafio-cnab-backend/Desafio.Service/Desafio.Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.304/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/will.i.am/git/desafio-dev/desafio-cnab-backend/Desafio.Domain/Desafio.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/will.i.am/git/desafio-dev/desafio-cnab-backend/Desafio.Domain/Desafio.Domain.csproj",
+        "projectName": "Desafio.Domain",
+        "projectPath": "/Users/will.i.am/git/desafio-dev/desafio-cnab-backend/Desafio.Domain/Desafio.Domain.csproj",
+        "packagesPath": "/Users/will.i.am/.nuget/packages/",
+        "outputPath": "/Users/will.i.am/git/desafio-dev/desafio-cnab-backend/Desafio.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/will.i.am/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.304/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/will.i.am/git/desafio-dev/desafio-cnab-backend/Desafio.Infra/Desafio.Infra.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/will.i.am/git/desafio-dev/desafio-cnab-backend/Desafio.Infra/Desafio.Infra.csproj",
+        "projectName": "Desafio.Infra",
+        "projectPath": "/Users/will.i.am/git/desafio-dev/desafio-cnab-backend/Desafio.Infra/Desafio.Infra.csproj",
+        "packagesPath": "/Users/will.i.am/.nuget/packages/",
+        "outputPath": "/Users/will.i.am/git/desafio-dev/desafio-cnab-backend/Desafio.Infra/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/will.i.am/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/will.i.am/git/desafio-dev/desafio-cnab-backend/Desafio.Domain/Desafio.Domain.csproj": {
+                "projectPath": "/Users/will.i.am/git/desafio-dev/desafio-cnab-backend/Desafio.Domain/Desafio.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Proxies": {
+              "target": "Package",
+              "version": "[3.1.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[3.1.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.14, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.304/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/will.i.am/git/desafio-dev/desafio-cnab-backend/Desafio.Service/Desafio.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/will.i.am/git/desafio-dev/desafio-cnab-backend/Desafio.Service/Desafio.Service.csproj",
+        "projectName": "Desafio.Service",
+        "projectPath": "/Users/will.i.am/git/desafio-dev/desafio-cnab-backend/Desafio.Service/Desafio.Service.csproj",
+        "packagesPath": "/Users/will.i.am/.nuget/packages/",
+        "outputPath": "/Users/will.i.am/git/desafio-dev/desafio-cnab-backend/Desafio.Service/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/will.i.am/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/will.i.am/git/desafio-dev/desafio-cnab-backend/Desafio.Domain/Desafio.Domain.csproj": {
+                "projectPath": "/Users/will.i.am/git/desafio-dev/desafio-cnab-backend/Desafio.Domain/Desafio.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

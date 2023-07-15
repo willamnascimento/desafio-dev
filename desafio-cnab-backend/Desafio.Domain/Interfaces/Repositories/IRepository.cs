@@ -4,8 +4,8 @@ namespace Desafio.Domain.Interfaces.Repositories;
 
 public interface IRepository<T> where T : BaseEntity
 {
-    Task<T> Insert(T entity);
-    Task<IEnumerable<T>> GetAll();
+    T Insert(T entity);
+    IEnumerable<T> GetAll();
 }
 
 

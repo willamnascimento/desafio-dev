@@ -1,12 +1,12 @@
 ﻿using Desafio.Domain.DTOs.ImportacaoCNAB;
-using Desafio.Domain.Responses;
+using Microsoft.AspNetCore.Http;
 
 namespace Desafio.Domain.Interfaces.Services;
 
 public interface IImportacaoCNABService
 {
-    Task<IEnumerable<ImportacaoCNABDto>> GetAll();
+    IEnumerable<ImportacaoCNABDto> GetAll(DateTime dataImportacao);
 
-    Task<HttpResponse> Create(ImportacaoCNABDto dto);
+    Responses.HttpResponse Import(ICollection<IFormFile> arquivos);
 }
 

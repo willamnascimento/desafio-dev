@@ -3,6 +3,7 @@ namespace Desafio.Domain.DTOs.ImportacaoCNAB;
 
 public class ImportacaoCNABDto
 {
+    public DateTime DataImportacao { get; set; }
     public int Tipo { get; set; }
     public DateTime Data { get; set; }
     public decimal Valor { get; set; }
