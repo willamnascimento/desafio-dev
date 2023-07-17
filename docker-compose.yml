@@ -1,0 +1,48 @@
+version: '3'
+
+services:
+  azure-sql:
+    image: "mcr.microsoft.com/azure-sql-edge"
+    hostname: "azure-sql"
+    environment:
+      ACCEPT_EULA: 1
+      MSSQL_SA_PASSWORD: "P@ssw0rd"
+      MSSQL_USER: "SA"
+      MSSQL_PID: "Developer"
+    volumes:
+      - azure-sql-storage:/var/opt/mssql
+    networks:
+      - desafio-network
+    ports:
+      - "1433:1433"
+
+  api:
+    image: "williambr2022/desafio-api:1.0"
+    ports:
+      - "10100:80"
+    environment:
+      DbServe: 'azure-sql'
+      DbPort: '1433'
+      DbUser: 'sa'
+      Password: 'P@ssw0rd'
+      Database: 'Importacao'
+    networks:
+      - desafio-network
+    depends_on:
+      - "azure-sql"
+  
+  front:
+    image: "williambr2022/desafio-front:1.0"
+    ports:
+      - "8080:80"
+    networks:
+      - desafio-network
+    depends_on:
+      - "azure-sql"
+
+networks: 
+    desafio-network:
+        driver: bridge
+volumes:
+  azure-sql-storage:
+    external: true
