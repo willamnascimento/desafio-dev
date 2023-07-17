@@ -2,7 +2,6 @@
 using AutoMapper;
 using Desafio.Domain.DTOs.ImportacaoCNAB;
 using Desafio.Domain.Entities;
-using Desafio.Domain.Enum;
 using Desafio.Domain.Interfaces.Repositories;
 using Desafio.Domain.Interfaces.Services;
 using Desafio.Domain.Responses;
@@ -33,6 +32,9 @@ public class ImportacaoCNABService : IImportacaoCNABService
     {
         try
         {
+            if (arquivos.Count == 0)
+                throw new Exception("Lista de arquivos vazia.");
+
             foreach (var arquivo in arquivos)
             {
                 using (var stream = new MemoryStream())

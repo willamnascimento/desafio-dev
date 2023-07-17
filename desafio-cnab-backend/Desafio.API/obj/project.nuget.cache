@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "AOU37Uz5wTLAZy46ztryLGv4EgSeBrHblgPNLhONol9iL6eVmkowbycj1RlI9e9313ymRc2XmA5J55ZS7XNVag==",
+  "dgSpecHash": "g1bqqXduSGl10BZyhaTF3UyrpVU+07uPElQWUC7bwiLyIKHM942spkxKhhAsgAsQorGdZ7kBcI/z6i5VZLpRbg==",
   "success": true,
   "projectFilePath": "/Users/will.i.am/git/desafio-dev/desafio-cnab-backend/Desafio.API/Desafio.API.csproj",
   "expectedPackageFiles": [
@@ -17,6 +17,7 @@
     "/Users/will.i.am/.nuget/packages/microsoft.entityframeworkcore/3.1.14/microsoft.entityframeworkcore.3.1.14.nupkg.sha512",
     "/Users/will.i.am/.nuget/packages/microsoft.entityframeworkcore.abstractions/3.1.14/microsoft.entityframeworkcore.abstractions.3.1.14.nupkg.sha512",
     "/Users/will.i.am/.nuget/packages/microsoft.entityframeworkcore.analyzers/3.1.14/microsoft.entityframeworkcore.analyzers.3.1.14.nupkg.sha512",
+    "/Users/will.i.am/.nuget/packages/microsoft.entityframeworkcore.inmemory/3.1.14/microsoft.entityframeworkcore.inmemory.3.1.14.nupkg.sha512",
     "/Users/will.i.am/.nuget/packages/microsoft.entityframeworkcore.proxies/3.1.14/microsoft.entityframeworkcore.proxies.3.1.14.nupkg.sha512",
     "/Users/will.i.am/.nuget/packages/microsoft.entityframeworkcore.relational/3.1.14/microsoft.entityframeworkcore.relational.3.1.14.nupkg.sha512",
     "/Users/will.i.am/.nuget/packages/microsoft.entityframeworkcore.sqlserver/3.1.14/microsoft.entityframeworkcore.sqlserver.3.1.14.nupkg.sha512",

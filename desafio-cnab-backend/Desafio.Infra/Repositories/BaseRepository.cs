@@ -23,7 +23,6 @@ public class BaseRepository<T> : IRepository<T> where T : BaseEntity
 
     public T Insert(T entity)
     {
-
         entity.DataImportacao = DateTime.Now;
         dbSet.Add(entity);
 
@@ -31,6 +30,4 @@ public class BaseRepository<T> : IRepository<T> where T : BaseEntity
 
         return entity;
     }
-
-    
 }

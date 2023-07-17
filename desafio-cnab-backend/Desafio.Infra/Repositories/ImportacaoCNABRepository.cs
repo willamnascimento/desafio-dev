@@ -16,7 +16,7 @@ public class ImportacaoCNABRepository : BaseRepository<ImportacaoCNAB>, IImporta
 
     public IEnumerable<ImportacaoCNAB> GetAll(DateTime dataImportacao)
     {
-        return dbSet.Where(x => x.DataImportacao == dataImportacao).ToList();
+        return dbSet.Where(x => x.DataImportacao.Date == dataImportacao.Date).ToList();
     }
 }
 

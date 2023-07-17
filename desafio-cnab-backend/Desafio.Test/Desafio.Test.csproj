@@ -10,6 +10,8 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.14" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="3.1.14" />
     <PackageReference Include="xunit" Version="2.4.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -19,6 +21,21 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="Moq.AutoMock" Version="3.5.0" />
+    <PackageReference Include="AutoMapper" Version="10.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Service\" />
+    <None Remove="Repositories\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Service\" />
+    <Folder Include="Repositories\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Desafio.Domain\Desafio.Domain.csproj" />
+    <ProjectReference Include="..\Desafio.Service\Desafio.Service.csproj" />
+    <ProjectReference Include="..\Desafio.Infra\Desafio.Infra.csproj" />
+  </ItemGroup>
 </Project>
