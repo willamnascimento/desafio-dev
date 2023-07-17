@@ -30,7 +30,6 @@ namespace Desafio.Infra.Repositories.Tests
                 new ImportacaoCNAB { Id = 3, DataImportacao = DateTime.Now.AddDays(-1) }
             };
 
-
             var queryableEntities = entities.AsQueryable();
 
             mockDbSet.As<IQueryable<ImportacaoCNAB>>().Setup(m => m.Provider).Returns(queryableEntities.Provider);
@@ -81,8 +80,6 @@ namespace Desafio.Infra.Repositories.Tests
 
     }
 
-
-
     public class InMemoryDbContextFactory
     {
         public AppDbContext GetDbContext()
@@ -94,14 +91,6 @@ namespace Desafio.Infra.Repositories.Tests
             var dbContext = new AppDbContext(options);
 
             var dataImportacao = DateTime.Now;
-
-            //for (int i = 0; i < 3; i++)
-            //{
-            //    if (!dbContext.importacaoCNABs.Any(x => x.Id.Equals(i + 1)))
-            //    {
-            //        dbContext.importacaoCNABs.Add(new ImportacaoCNAB { Id = i + 1, DataImportacao = DateTime.Now.AddDays(i) });
-            //    }
-            //}
 
             if (dbContext.importacaoCNABs.Count() == 0)
             {

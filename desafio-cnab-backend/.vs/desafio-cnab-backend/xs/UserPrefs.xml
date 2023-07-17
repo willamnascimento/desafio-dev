@@ -1,47 +1,40 @@
 ﻿<Properties StartupConfiguration="{D25D941B-3729-4731-9B80-8C5E2CB3731E}|Default">
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/will.i.am/git/desafio-dev/desafio-cnab-backend/Desafio.API/Controllers/ImportacaoController.cs" relfile="Desafio.API/Controllers/ImportacaoController.cs" line="33" column="1" />
-      <Breakpoint file="/Users/will.i.am/git/desafio-dev/desafio-cnab-backend/Desafio.Service/Services/ImportacaoCNABService.cs" relfile="Desafio.Service/Services/ImportacaoCNABService.cs" line="84" column="1" />
-      <Breakpoint file="/Users/will.i.am/git/desafio-dev/desafio-cnab-backend/Desafio.Infra/Repositories/BaseRepository.cs" relfile="Desafio.Infra/Repositories/BaseRepository.cs" line="27" column="1" />
-      <Breakpoint file="/Users/will.i.am/git/desafio-dev/desafio-cnab-backend/Desafio.API/Program.cs" relfile="Desafio.API/Program.cs" line="64" column="1" />
+      <Breakpoint file="/Users/will.i.am/git/desafio-dev/desafio-cnab-backend/Desafio.Test/Service/ImportacaoCNABServiceTest.cs" relfile="Desafio.Test/Service/ImportacaoCNABServiceTest.cs" line="54" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Desafio.API/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Desafio.Test/Repositories/BaseRepositoryTests.cs">
     <Files>
-      <File FileName="Desafio.Infra/Context/AppDbContext.cs" Line="19" Column="6" />
-      <File FileName="Desafio.Infra/Mapping/ImportacaoCNABMap.cs" Line="50" Column="28" />
-      <File FileName="Desafio.Infra/Repositories/BaseRepository.cs" Line="30" Column="1" />
-      <File FileName="Desafio.Service/Services/ImportacaoCNABService.cs" Line="90" Column="1" />
-      <File FileName="Desafio.API/Controllers/ImportacaoController.cs" Line="33" Column="1" />
+      <File FileName="Desafio.Infra/Context/AppDbContext.cs" Line="13" Column="41" />
+      <File FileName="Desafio.Infra/Mapping/ImportacaoCNABMap.cs" />
       <File FileName="Desafio.API/Properties/launchSettings.json" Line="23" Column="32" />
-      <File FileName="Desafio.Domain/Interfaces/Services/IImportacaoCNABService.cs" Line="11" Column="37" />
-      <File FileName="Desafio.API/Desafio.API.csproj" Line="1" Column="1" />
-      <File FileName="Desafio.API/Program.cs" Line="71" Column="1" />
+      <File FileName="Desafio.API/Desafio.API.csproj" />
+      <File FileName="Desafio.Domain/Interfaces/Repositories/IImportacaoCNABRepository.cs" Line="7" Column="65" />
+      <File FileName="Desafio.Domain/Interfaces/Repositories/IRepository.cs" Line="8" Column="29" />
+      <File FileName="Desafio.Domain/Interfaces/Services/IImportacaoCNABService.cs" Line="7" Column="2" />
+      <File FileName="Desafio.API/Controllers/ImportacaoController.cs" Line="24" Column="17" />
+      <File FileName="Desafio.Test/Service/ImportacaoCNABServiceTest.cs" Line="75" Column="1" />
+      <File FileName="Desafio.Service/Services/ImportacaoCNABService.cs" Line="51" Column="1" />
+      <File FileName="Desafio.Test/Repositories/BaseRepositoryTests.cs" Line="83" Column="42" />
+      <File FileName="Desafio.Infra/Desafio.Infra.csproj" Line="20" Column="90" />
+      <File FileName="Desafio.Test/Desafio.Test.csproj" Line="14" Column="90" />
+      <File FileName="Desafio.Infra/Repositories/BaseRepository.cs" Line="16" Column="34" />
+      <File FileName="Desafio.Infra/Repositories/ImportacaoCNABRepository.cs" Line="19" Column="77" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
+        <State name="__root__" />
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
         <State name="__root__">
-          <Node name="desafio-cnab-backend" expanded="True">
-            <Node name="Desafio.API">
-              <Node name="Dependencies" expanded="True" />
-              <Node name="Controllers" expanded="True" />
-              <Node name="Program.cs" selected="True" />
-            </Node>
-            <Node name="Desafio.Domain">
-              <Node name="Responses" expanded="True" />
-            </Node>
-            <Node name="Desafio.Infra">
-              <Node name="Repositories" expanded="True" />
-            </Node>
-          </Node>
+          <Node name="desafio-cnab-backend" selected="True" />
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Desafio.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Desafio.Test FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.Desafio.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>
