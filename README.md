@@ -6,7 +6,7 @@ Esse projeto pode ser executado nas plataformas (Windows, Linux or MacOS).
 
 Para saber mais como configurar seu ambiente, visite [Microsoft .NET Download Guide](https://www.microsoft.com/net/download)
 
-## Technologias utilizar:
+## Tecnologias utilizar:
 
 # Backend
 - ASP.NET 6.0
