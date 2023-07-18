@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FileUploadService } from 'src/app/shared/file-upload.service';
+import { FileUploadService } from 'src/app/shared/services/file-upload.service';
 
 @Component({
   selector: 'app-formulario',
@@ -19,10 +19,10 @@ export class FormularioComponent{
   uploadFile() {
     if (this.selectedFile) {
       this.fileUploadService.uploadFile(this.selectedFile).subscribe(
-        response => {
+        (response: any) => {
           console.log('Arquivo enviado com sucesso!', response);
         },
-        error => {
+        (        error: any) => {
           console.error('Erro ao enviar arquivo:', error);
         }
         );

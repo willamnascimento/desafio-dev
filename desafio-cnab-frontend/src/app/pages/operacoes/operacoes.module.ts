@@ -1,16 +1,16 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FileUploadService } from 'src/app/shared/services/file-upload.service';
-import { FormularioRoutingModule } from './formulario-routing.module';
-import { FormularioComponent } from './formulario.component';
+import { OperacoesRoutingModule } from './operacoes-routing.module';
+import { OperacoesComponent } from './operacoes.component';
 
 @NgModule({
     imports: [
         CommonModule, 
-        FormularioRoutingModule],
+        OperacoesRoutingModule],
     declarations: [
-        FormularioComponent],
+        OperacoesComponent],
     providers: [
         FileUploadService]
 })
-export class FormularioModule {}
+export class OperacoesModule {}
