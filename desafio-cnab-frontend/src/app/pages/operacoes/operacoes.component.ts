@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { Cnab } from 'src/app/shared/models/cnab';
 import { CnabService } from 'src/app/shared/services/cnab.service';
 
@@ -10,11 +10,13 @@ import { CnabService } from 'src/app/shared/services/cnab.service';
 export class OperacoesComponent{
   
   operacoes: Cnab[] | undefined;
+  @ViewChild('inputDate')
+  inputDate!: ElementRef;
   
   constructor(private cnabService: CnabService) {}
 
   getAll(){
-    const dataImportacao = '2023-07-17'
+    const dataImportacao = this.inputDate.nativeElement.value;
     this.cnabService.getAll(dataImportacao).subscribe((resp: Cnab[]) => {
       this.operacoes = resp;
     })

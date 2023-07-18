@@ -22,7 +22,7 @@ export class FormularioComponent{
         (response: any) => {
           console.log('Arquivo enviado com sucesso!', response);
         },
-        (        error: any) => {
+        (error: any) => {
           console.error('Erro ao enviar arquivo:', error);
         }
         );
